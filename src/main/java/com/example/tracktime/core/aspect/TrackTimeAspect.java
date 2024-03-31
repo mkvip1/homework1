@@ -21,9 +21,9 @@ public class TrackTimeAspect {
     @Around(value = "@annotation(com.example.tracktime.core.annotation.TrackTime)")
     public Object trackTime(ProceedingJoinPoint joinPoint) throws Throwable {
 
-        var start = System.currentTimeMillis();
-
         Object joinPointResult;
+
+        var start = System.currentTimeMillis();
         try {
             joinPointResult = joinPoint.proceed();
         } catch (Throwable th) {
