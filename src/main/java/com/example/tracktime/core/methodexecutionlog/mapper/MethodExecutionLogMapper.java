@@ -1,4 +1,4 @@
-package com.example.tracktime.core.methodexecutionlog.service.mapper;
+package com.example.tracktime.core.methodexecutionlog.mapper;
 
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;

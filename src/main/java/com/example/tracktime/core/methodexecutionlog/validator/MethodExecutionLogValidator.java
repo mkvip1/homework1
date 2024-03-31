@@ -1,4 +1,4 @@
-package com.example.tracktime.core.methodexecutionlog.service.validator;
+package com.example.tracktime.core.methodexecutionlog.validator;
 
 import org.springframework.stereotype.Component;
 import org.springframework.validation.Validator;
