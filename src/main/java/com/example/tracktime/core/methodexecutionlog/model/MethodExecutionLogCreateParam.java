@@ -1,4 +1,4 @@
-package com.example.tracktime.core.methodexecutionlog.dto;
+package com.example.tracktime.core.methodexecutionlog.model;
 
 import com.example.tracktime.core.methodexecutionlog.entity.ExecutionType;
 

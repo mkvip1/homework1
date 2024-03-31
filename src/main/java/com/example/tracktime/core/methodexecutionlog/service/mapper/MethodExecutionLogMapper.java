@@ -4,8 +4,8 @@ import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;
 
-import com.example.tracktime.core.methodexecutionlog.dto.MethodExecutionLogCreateParam;
 import com.example.tracktime.core.methodexecutionlog.entity.MethodExecutionLogEntity;
+import com.example.tracktime.core.methodexecutionlog.model.MethodExecutionLogCreateParam;
 
 @Mapper(unmappedTargetPolicy = org.mapstruct.ReportingPolicy.ERROR)
 public interface MethodExecutionLogMapper {

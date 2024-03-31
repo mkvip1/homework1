@@ -3,7 +3,7 @@ package com.example.tracktime.core.methodexecutionlog.service.validator;
 import org.springframework.stereotype.Component;
 import org.springframework.validation.Validator;
 
-import com.example.tracktime.core.methodexecutionlog.dto.MethodExecutionLogCreateParam;
+import com.example.tracktime.core.methodexecutionlog.model.MethodExecutionLogCreateParam;
 
 import lombok.RequiredArgsConstructor;
 

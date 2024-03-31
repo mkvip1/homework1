@@ -5,8 +5,8 @@ import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.springframework.stereotype.Component;
 
-import com.example.tracktime.core.methodexecutionlog.dto.MethodExecutionLogCreateParam;
 import com.example.tracktime.core.methodexecutionlog.entity.ExecutionType;
+import com.example.tracktime.core.methodexecutionlog.model.MethodExecutionLogCreateParam;
 import com.example.tracktime.core.methodexecutionlog.service.MethodExecutionLogService;
 
 import lombok.RequiredArgsConstructor;
