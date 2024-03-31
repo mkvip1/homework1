@@ -1,4 +1,4 @@
-package com.example.tracktime.core.aspect;
+package com.example.tracktime.core.tracktime.aspect;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
@@ -18,7 +18,7 @@ public class TrackTimeAspect {
 
     private final MethodExecutionLogService methodExecutionLogService;
 
-    @Around(value = "@annotation(com.example.tracktime.core.annotation.TrackTime)")
+    @Around(value = "@annotation(com.example.tracktime.core.tracktime.annotation.TrackTime)")
     public Object trackTime(ProceedingJoinPoint joinPoint) throws Throwable {
 
         Object joinPointResult;

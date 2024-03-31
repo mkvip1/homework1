@@ -1,4 +1,4 @@
-package com.example.tracktime.core.annotation;
+package com.example.tracktime.core.tracktime.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

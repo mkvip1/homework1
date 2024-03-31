@@ -13,3 +13,6 @@ spring:
     open-in-view: false
     hibernate:
       ddl-auto: validate
+#logging:
+#  level:
+#    org.springframework.transaction: TRACE
