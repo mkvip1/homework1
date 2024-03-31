@@ -1,0 +1,38 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+
+    <changeSet author="ms.kuznetsov" id="001">
+        <comment>001 - Добавлена таблица для логирования времени выполнения методов</comment>
+        <createSequence sequenceName="method_execution_log_sequence" incrementBy="1" startValue="1"/>
+
+        <createTable tableName="method_execution_log">
+            <column name="id" type="BIGINT" defaultValueSequenceNext="method_execution_log_sequence">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="pk__method_execution_log"/>
+            </column>
+
+            <column name="type" type="VARCHAR(15)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="clazz_name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="method_name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="successful" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="execution_time" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+    </changeSet>
+
+</databaseChangeLog>

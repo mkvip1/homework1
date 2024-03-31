@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: tracktime
+  datasource:
+    url: jdbc:postgresql://localhost:5432/tracktimedb
+    username: tracktime
+    password: tracktime1
+    hikari:
+      schema: tracktime
+  liquibase:
+    change-log: classpath:/db/changelog/db.changelog-master.xml
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
