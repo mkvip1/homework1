@@ -13,7 +13,7 @@ import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 
-@Tag(name = "Сервис статистики времени выполнения методов")
+@Tag(name = "MethodExecutionLogController", description = "Сервис статистики времени выполнения методов")
 @RestController
 @RequestMapping(value = "method-execution-log-statistic")
 @RequiredArgsConstructor
