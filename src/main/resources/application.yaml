@@ -13,6 +13,9 @@ spring:
     open-in-view: false
     hibernate:
       ddl-auto: validate
+  task:
+    execution:
+      thread-name-prefix: app-task-
 #    show-sql: true
 #    properties:
 #      hibernate:
